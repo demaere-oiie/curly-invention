@@ -54,7 +54,7 @@ function sample(list) {
 
 function main() {
     const elem = document.querySelector("#genText");
-    const template = Math.floor(Math.random() * 2);
+    const template = Math.floor(Math.random() * 3);
     if (template == 0) {
         elem.innerHTML = `${sample(xs)} for ${sample(ys)} in ${sample(zs)}`;
     } else if (template == 1) {
