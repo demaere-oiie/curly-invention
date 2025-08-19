@@ -1,0 +1,12 @@
+#genText {
+    color: red;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
