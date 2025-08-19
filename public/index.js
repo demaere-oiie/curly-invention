@@ -2,7 +2,7 @@ const xs = [
 "Anthropic",
 "Facebook",
 "Stripe",
-"the service formerly known as Twitter",
+"The service formerly known as Twitter",
 "Uber",
 ];
 
@@ -15,7 +15,7 @@ const ys = [
 ];
 
 const zs = [
-"assembly",
+"Assembly",
 "COBOL",
 "Haskell",
 "JavaScript",
@@ -39,7 +39,7 @@ function main() {
     if (template == 0) {
         elem.innerHTML = `${sample(xs)} for ${sample(ys)} in ${sample(zs)}`;
     } else if (template == 1) {
-        elem.innerHTML = `${sample(zs)} implemented in ${sample(zs)} on a ${sample(bs)}`;
+        elem.innerHTML = `${sample(zs)} implemented in ${sample(zs)} on ${sample(bs)}`;
     }
 }
 
