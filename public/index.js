@@ -2,7 +2,7 @@ const xs = [
 "Anthropic",
 "Chinese Idiom instruction",
 "Facebook",
-"Project idea generator"
+"Project idea generator",
 "Stripe",
 "Text-based MUD",
 "The service formerly known as Twitter",
