@@ -1,4 +1,5 @@
 const xs = [
+"Anthropic",
 "Facebook",
 "Stripe",
 "the service formerly known as Twitter",
@@ -10,12 +11,22 @@ const ys = [
 "dogs",
 "the Enterprise",
 "LLMs",
+"vampires",
 ];
 
 const zs = [
+"assembly",
 "COBOL",
+"Haskell",
 "JavaScript",
 "Python",
+];
+
+const bs = [
+"a 6502",
+"the blockchain",
+"an Nvidia A16",
+"a Raspberry Pi",
 ];
 
 function sample(list) {
@@ -24,7 +35,12 @@ function sample(list) {
 
 function main() {
     const elem = document.querySelector("#genText");
-    elem.innerHTML = `${sample(xs)} for ${sample(ys)} in ${sample(zs)}`;
+    const template = Math.floor(Math.random() * 2);
+    if (template == 0) {
+        elem.innerHTML = `${sample(xs)} for ${sample(ys)} in ${sample(zs)}`;
+    } else if (template == 1) {
+        elem.innerHTML = `${sample(zs)} implemented in ${sample(zs)} on a ${sample(bs)}`;
+    }
 }
 
 main();
