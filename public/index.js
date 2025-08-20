@@ -28,8 +28,8 @@ const zs = [
 "Gleam",
 "Haskell",
 "JavaScript",
-"LSP server",
-"MCP server",
+"an LSP server",
+"an MCP server",
 "Python",
 ];
 
@@ -62,7 +62,6 @@ class Terminal extends Node {
        return (n==1 ? 1 : 0);
    }
    kth(n,k) {
-       console.log(`${n} ${k}`);
        return (n==1 ? this.text : "*barf*");
    }
 }
@@ -116,7 +115,7 @@ class Seq extends Node {
         for(let m = 0; m <= n; m++) {
             let more = this.l.ways(m) * this.r.ways(n-m);
             if (k < tot + more) {
-                console.log(`ways ${m} ${n} / ${this.l.ways(m)} ${this.r.ways(n-m)}`);
+                // console.log(`ways ${m} ${n} / ${this.l.ways(m)} ${this.r.ways(n-m)}`);
                 let mod = this.l.ways(m);
                 let knew = k - tot;
                 return (this.l.kth(m,knew % mod) + " " +
@@ -129,6 +128,7 @@ class Seq extends Node {
 
 function Alts(list) {
     if(list.length == 1) {
+        if (list[0] instanceof Node) { return list[0]; }
         return new Terminal(list[0]);
     } else {
         let m = Math.floor(list.length / 2);
@@ -138,6 +138,7 @@ function Alts(list) {
 
 function Seqs(list) {
     if(list.length == 1) {
+        if (list[0] instanceof Node) { return list[0]; }
         return new Terminal(list[0]);
     } else {
         let m = Math.floor(list.length / 2);
@@ -151,6 +152,7 @@ function sample(list) {
 
 function main() {
     const elem = document.querySelector("#genText");
+    /*
     const template = Math.floor(Math.random() * 3);
     if (template == 0) {
         elem.innerHTML = `${sample(xs)} for ${sample(ys)} in ${sample(zs)}`;
@@ -158,43 +160,18 @@ function main() {
         elem.innerHTML = `${sample(zs)} implemented in ${sample(zs)} on ${sample(bs)}`;
     } else if (template == 2) {
         elem.innerHTML = `${sample(xs)} meets ${sample(xs)} ${sample(cs)}`;
-    }
+    }*/
 
-    /*
-    console.log(Alts(["a","b","c","d","e"]).ways(0));
-    console.log(Alts(["a","b","c","d","e"]).ways(1));
-    console.log(Alts(["a","b","c","d","e"]).ways(2));
-    console.log("----");
-    console.log(Seqs(["a","b","c","d","e"]).ways(4));
-    console.log(Seqs(["a","b","c","d","e"]).ways(5));
-    console.log(Seqs(["a","b","c","d","e"]).ways(6));
-    console.log("----");
-    console.log(Alts(["a","b","c","d","e"]).kth(1,0));
-    console.log(Alts(["a","b","c","d","e"]).kth(1,1));
-    console.log(Alts(["a","b","c","d","e"]).kth(1,2));
-    console.log(Alts(["a","b","c","d","e"]).kth(1,3));
-    console.log(Alts(["a","b","c","d","e"]).kth(1,4));
-    console.log("----");
-    console.log(new Seq(Alts(["a","b"]),Alts(["c","d"])).ways(1));
-    console.log(new Seq(Alts(["a","b"]),Alts(["c","d"])).ways(2));
-    console.log(new Seq(Alts(["a","b"]),Alts(["c","d"])).ways(3));
-    console.log(new Seq(Alts(["a","b"]),Alts(["c","d"])).kth(2,0));
-    console.log(new Seq(Alts(["a","b"]),Alts(["c","d"])).kth(2,1));
-    console.log(new Seq(Alts(["a","b"]),Alts(["c","d"])).kth(2,2));
-    console.log(new Seq(Alts(["a","b"]),Alts(["c","d"])).kth(2,3));
-    //console.log("----");
-    //console.log(Alts(["a","b"]).ways(1));
-    //console.log(Alts(["a","b"]).kth(1,0));
-    //console.log(Alts(["a","b"]).kth(1,1));
-    */
-    /*
-    let xpr = Seqs([Alts(xs),"for",Alts(ys),"in",Alts(zs)]);
+    let xpr = Alts([Seqs([Alts(xs),"for",Alts(ys),"in",Alts(zs)]),
+                    Seqs([Alts(zs),"implemented in",Alts(zs),"on",Alts(bs)]),
+                    Seqs([Alts(xs),"meets",Alts(xs),Alts(cs)])]);
+
     console.log(xpr);
-    let ways = xpr.ways(5);
-    let k = Math.floor(Math.random() * ways);
+    let toks = sample([5,5,4]);
+    let ways = xpr.ways(toks);
     console.log(ways);
-    console.log(xpr.kth(5,k));
-    */
+    let k = Math.floor(Math.random() * ways);
+    elem.innerHTML = xpr.kth(toks,k);
 }
 
 main();
