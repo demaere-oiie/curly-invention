@@ -17,6 +17,7 @@ const ys = [
 "dogs",
 "the Enterprise",
 "LLMs",
+"mealybugs",
 "prose/fiction",
 "vampires",
 ];
