@@ -31,13 +31,14 @@ const zs = [
 "JavaScript",
 "an LSP server",
 "an MCP server",
+"PEGs",
 "Python",
 ];
 
 const bs = [
 "a 6502",
 "the blockchain",
-"an Nvidia A16",
+"an Nvidia H100",
 "the Rapidriter",
 "a Raspberry Pi",
 ];
