@@ -5,6 +5,7 @@ const xs = [
 "Chinese Idiom instruction",
 "Facebook",
 "Project idea generator",
+"RCTV",
 "Stripe",
 "Text-based MUD",
 "The service formerly known as Twitter",
@@ -17,7 +18,6 @@ const ys = [
 "dogs",
 "the Enterprise",
 "LLMs",
-"mealybugs",
 "prose/fiction",
 "vampires",
 ];
@@ -37,7 +37,7 @@ const zs = [
 const bs = [
 "a 6502",
 "the blockchain",
-"an Nvidia H100",
+"an Nvidia A16",
 "the Rapidriter",
 "a Raspberry Pi",
 ];
