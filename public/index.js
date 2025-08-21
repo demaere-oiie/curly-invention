@@ -1,10 +1,13 @@
 "use strict";
 
 const xs = [
+"5D fractals",
+"A web scraper",
 "Anthropic",
 "Chinese Idiom instruction",
 "Eulerian paths",
 "Facebook",
+"Misrosoft Powerpint",
 "Project idea generator",
 "RCTV",
 "Stripe",
@@ -27,6 +30,7 @@ const ys = [
 
 const zs = [
 "Assembly",
+"C",
 "COBOL",
 "Elixir",
 "Gleam",
@@ -36,17 +40,20 @@ const zs = [
 "an MCP server",
 "PEGs",
 "Python",
+"Zig",
 ];
 
 const bs = [
 "a 6502",
 "the blockchain",
+"nix",
 "an Nvidia H100",
 "the Rapidriter",
 "a Raspberry Pi",
 ];
 
 const cs = [
+"at nuclear test sites",
 "but e2e encrypted",
 "but social",
 "but *very* fast",
