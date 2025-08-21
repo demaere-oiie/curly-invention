@@ -13,6 +13,7 @@ const xs = [
 ];
 
 const ys = [
+"bears",
 "cats",
 "chess actions",
 "dogs",
@@ -20,6 +21,7 @@ const ys = [
 "LLMs",
 "prose/fiction",
 "vampires",
+"whale sharks",
 ];
 
 const zs = [
