@@ -3,6 +3,7 @@
 const xs = [
 "Anthropic",
 "Chinese Idiom instruction",
+"Eulerian paths",
 "Facebook",
 "Project idea generator",
 "RCTV",
