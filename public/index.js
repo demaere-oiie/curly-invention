@@ -57,6 +57,7 @@ const cs = [
 "but e2e encrypted",
 "but social",
 "but *very* fast",
+"but vibecoded",
 "with a swiping twist",
 "with a IOT twist",
 "with extra AI",
