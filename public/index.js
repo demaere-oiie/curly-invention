@@ -53,6 +53,7 @@ const bs = [
 ];
 
 const cs = [
+"and it's been golfed",
 "at nuclear test sites",
 "but e2e encrypted",
 "but social",
