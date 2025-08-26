@@ -7,6 +7,7 @@ const xs = [
 "Chinese Idiom instruction",
 "Eulerian paths",
 "Facebook",
+"I Ching",
 "Misrosoft Powerpint",
 "Project idea generator",
 "RCTV",
@@ -166,22 +167,12 @@ function sample(list) {
 
 function main() {
     const elem = document.querySelector("#genText");
-    /*
-    const template = Math.floor(Math.random() * 3);
-    if (template == 0) {
-        elem.innerHTML = `${sample(xs)} for ${sample(ys)} in ${sample(zs)}`;
-    } else if (template == 1) {
-        elem.innerHTML = `${sample(zs)} implemented in ${sample(zs)} on ${sample(bs)}`;
-    } else if (template == 2) {
-        elem.innerHTML = `${sample(xs)} meets ${sample(xs)} ${sample(cs)}`;
-    }*/
-
     let xpr = Alts([Seqs([Alts(xs),"for",Alts(ys),"in",Alts(zs)]),
                     Seqs([Alts(zs),"implemented in",Alts(zs),"on",Alts(bs)]),
-                    Seqs([Alts(xs),"meets",Alts(xs),Alts(cs)])]);
+                    Seqs([Alts(xs),"meets",Alts(xs),Alts(cs)]),
+                    Seqs([Alts(xs),Alts(cs),"—","in",Alts(zs)])]);
 
-    console.log(xpr);
-    let toks = sample([5,5,4]);
+    let toks = sample([5,5,5,4]);
     let ways = xpr.ways(toks);
     console.log(ways);
     let k = Math.floor(Math.random() * ways);
