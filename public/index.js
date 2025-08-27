@@ -49,7 +49,7 @@ const bs = [
 "the blockchain",
 "nix",
 "an Nvidia H100",
-"the Rapidriter",
+"the RapidRiter",
 "a Raspberry Pi",
 ];
 
@@ -64,6 +64,7 @@ const cs = [
 "with a swiping twist",
 "with a IOT twist",
 "with extra AI",
+"with phong shading",
 ];
 
 class Node {
