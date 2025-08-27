@@ -60,6 +60,7 @@ const cs = [
 "but social",
 "but *very* fast",
 "but vibecoded",
+"solving the halting problem",
 "with a swiping twist",
 "with a IOT twist",
 "with extra AI",
