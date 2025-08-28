@@ -41,6 +41,8 @@ const zs = [
 "an MCP server",
 "PEGs",
 "Python",
+"a recursive CTE",
+"vim script",
 "Zig",
 ];
 
