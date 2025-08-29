@@ -10,7 +10,9 @@ const xs = [
 "I Ching",
 "Misrosoft Powerpint",
 "Project idea generator",
+"Public Unix box",
 "RCTV",
+"Replacement for SQL",
 "Stripe",
 "Text-based MUD",
 "The service formerly known as Twitter",
@@ -62,6 +64,7 @@ const cs = [
 "but social",
 "but *very* fast",
 "but vibecoded",
+"configured in Nix",
 "solving the halting problem",
 "with a swiping twist",
 "with a IOT twist",
@@ -173,10 +176,11 @@ function main() {
     const elem = document.querySelector("#genText");
     let xpr = Alts([Seqs([Alts(xs),"for",Alts(ys),"in",Alts(zs)]),
                     Seqs([Alts(zs),"implemented in",Alts(zs),"on",Alts(bs)]),
+                    Seqs([Alts(zs),"version of",Alts(xs),Alts(cs)]),
                     Seqs([Alts(xs),"meets",Alts(xs),Alts(cs)]),
                     Seqs([Alts(xs),Alts(cs),"—","in",Alts(zs)])]);
 
-    let toks = sample([5,5,5,4]);
+    let toks = sample([4,5]);
     let ways = xpr.ways(toks);
     console.log(ways);
     let k = Math.floor(Math.random() * ways);
