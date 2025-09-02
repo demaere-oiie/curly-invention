@@ -2,6 +2,7 @@
 
 const xs = [
 "5D fractals",
+"A debugger",
 "A vector font renderer",
 "A web scraper",
 "Anthropic",
