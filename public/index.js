@@ -10,6 +10,7 @@ const xs = [
 "Eulerian paths",
 "Facebook",
 "I Ching",
+"Minesweeper",
 "Misrosoft Powerpint",
 "Project idea generator",
 "Public Unix box",
