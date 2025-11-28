@@ -186,6 +186,34 @@ var Seq = (function (_super) {
     };
     return Seq;
 }(Node_));
+;
+var Dist = (function (_super) {
+    __extends(Dist, _super);
+    function Dist(right) {
+        var _this = _super.call(this) || this;
+        _this.r = right;
+        return _this;
+    }
+    Dist.prototype.ways = function (n) {
+        var tot = 0;
+        for (var m = 0; m <= n; m++) {
+            tot += this.r.ways(m);
+            console.log(tot);
+        }
+        return tot;
+    };
+    Dist.prototype.kth = function (n, k) {
+        var tot = 0;
+        for (var m = 0; m <= n; m++) {
+            var more = this.r.ways(m);
+            if (k < tot + more) {
+                return this.r.kth(m, k - tot);
+            }
+            tot += more;
+        }
+    };
+    return Dist;
+}(Node_));
 function Alts(list) {
     if (list.length == 1) {
         if (list[0] instanceof Node_) {
@@ -210,24 +238,19 @@ function Seqs(list) {
         return new Seq(Seqs(list.slice(0, m)), Seqs(list.slice(m)));
     }
 }
-function sample(list) {
-    return list[Math.floor(Math.random() * list.length)];
-}
 function Sentence(val) {
     return String(val).charAt(0).toUpperCase() + String(val).slice(1) + "!";
 }
 function main() {
     var elem = document.querySelector("#genText");
-    var xpr = Alts([Seqs([Alts(xs), "for", Alts(ys), "in", Alts(zs)]),
+    var xpr = new Dist(Alts([Seqs([Alts(xs), "for", Alts(ys), "in", Alts(zs)]),
         Seqs([Alts(zs), "implemented in", Alts(zs), "on", Alts(bs)]),
         Seqs([Alts(zs), "version of", Alts(xs), Alts(cs)]),
         Seqs([Alts(xs), "meets", Alts(xs), Alts(cs)]),
-        Seqs([Alts(xs), Alts(cs), "—", "in", Alts(zs)])]);
-    var toks = sample([4, 5]);
-    var ways = xpr.ways(toks);
-    console.log(ways);
+        Seqs([Alts(xs), Alts(cs), "—", "in", Alts(zs)])]));
+    var ways = xpr.ways(10);
     var k = Math.floor(Math.random() * ways);
-    elem.innerHTML = Sentence(xpr.kth(toks, k));
+    elem.innerHTML = Sentence(xpr.kth(10, k));
 }
 main();
 //# sourceMappingURL=index.js.map

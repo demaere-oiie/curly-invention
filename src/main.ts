@@ -95,6 +95,36 @@ class Seq extends Node_ {
     }
 }
 
+interface Dist {
+    r: Node_;
+    a: number[];
+};
+
+class Dist extends Node_ {
+    constructor(right:Node_) {
+        super();
+        this.r = right;
+    }
+    ways(n:number) {
+        let tot = 0;
+        for(let m = 0; m <= n; m++) {
+            tot += this.r.ways(m);
+            console.log(tot);
+        }
+        return tot;
+    }
+    kth(n:number,k:number) {
+        let tot = 0;
+        for(let m = 0; m <= n; m++) {
+            let more = this.r.ways(m);
+            if (k < tot + more) {
+                return this.r.kth(m, k - tot);
+            }
+            tot += more;
+        }
+    }
+}
+
 type Kludge = Node_ | string;
 
 function Alts(list:Kludge[]):Node_ {
@@ -117,27 +147,22 @@ function Seqs(list:Kludge[]):Node_ {
     }
 }
 
-function sample(list:any[]) {
-    return list[Math.floor(Math.random() * list.length)];
-}
-
 function Sentence(val:string) {
      return String(val).charAt(0).toUpperCase() + String(val).slice(1) + "!";
 }
 
 function main() {
     const elem = document.querySelector("#genText");
-    let xpr = Alts([Seqs([Alts(xs),"for",Alts(ys),"in",Alts(zs)]),
+    let xpr = new Dist(
+               Alts([Seqs([Alts(xs),"for",Alts(ys),"in",Alts(zs)]),
                     Seqs([Alts(zs),"implemented in",Alts(zs),"on",Alts(bs)]),
                     Seqs([Alts(zs),"version of",Alts(xs),Alts(cs)]),
                     Seqs([Alts(xs),"meets",Alts(xs),Alts(cs)]),
-                    Seqs([Alts(xs),Alts(cs),"—","in",Alts(zs)])]);
+                    Seqs([Alts(xs),Alts(cs),"—","in",Alts(zs)])]));
 
-    let toks = sample([4,5]);
-    let ways = xpr.ways(toks);
-    console.log(ways);
+    let ways = xpr.ways(10);
     let k = Math.floor(Math.random() * ways);
-    elem.innerHTML = Sentence(xpr.kth(toks,k));
+    elem.innerHTML = Sentence(xpr.kth(10,k));
 }
 
 main();
