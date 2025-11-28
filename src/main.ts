@@ -121,6 +121,10 @@ function sample(list:any[]) {
     return list[Math.floor(Math.random() * list.length)];
 }
 
+function Sentence(val:string) {
+     return String(val).charAt(0).toUpperCase() + String(val).slice(1) + "!";
+}
+
 function main() {
     const elem = document.querySelector("#genText");
     let xpr = Alts([Seqs([Alts(xs),"for",Alts(ys),"in",Alts(zs)]),
@@ -133,7 +137,7 @@ function main() {
     let ways = xpr.ways(toks);
     console.log(ways);
     let k = Math.floor(Math.random() * ways);
-    elem.innerHTML = xpr.kth(toks,k);
+    elem.innerHTML = Sentence(xpr.kth(toks,k));
 }
 
 main();

@@ -2,28 +2,28 @@
 
 const xs = [
 "5D fractals",
-"A debugger",
-"A vector font renderer",
-"A web scraper",
-"Anthropic",
-"Body idiom catalog",
+"a debugger",
+"a vector font renderer",
+"a web scraper",
+"anthropic",
+"body idiom catalog",
 "Buffy Search",
-"Cellular automata",
-"Chinese Idiom instruction",
+"cellular automata",
+"chinese Idiom instruction",
 "Eulerian paths",
 "Facebook",
 "I Ching",
 "Minesweeper",
 "Misrosoft Powerpint",
 "Open Telemetry",
-"Project idea generator",
-"Public Unix box",
-"\"Ray-traced\" audio",
+"project idea generator",
+"public Unix box",
+"ray-traced audio",
 "RCTV",
-"Replacement for SQL",
+"replacement for SQL",
 "Stripe",
-"Text-based MUD",
-"The service formerly known as Twitter",
+"text-based MUD",
+"the service formerly known as Twitter",
 "Uber",
 ];
 
@@ -42,7 +42,7 @@ const ys = [
 ];
 
 const zs = [
-"Assembly",
+"assembly",
 "C",
 "COBOL",
 "Elixir",
@@ -83,6 +83,7 @@ const cs = [
 "via embeddings",
 "with a swiping twist",
 "with a IOT twist",
+"with camera input",
 "with extra AI",
 "with phong shading",
 ];

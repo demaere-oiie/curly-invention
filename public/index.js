@@ -16,28 +16,28 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var xs = [
     "5D fractals",
-    "A debugger",
-    "A vector font renderer",
-    "A web scraper",
-    "Anthropic",
-    "Body idiom catalog",
+    "a debugger",
+    "a vector font renderer",
+    "a web scraper",
+    "anthropic",
+    "body idiom catalog",
     "Buffy Search",
-    "Cellular automata",
-    "Chinese Idiom instruction",
+    "cellular automata",
+    "chinese Idiom instruction",
     "Eulerian paths",
     "Facebook",
     "I Ching",
     "Minesweeper",
     "Misrosoft Powerpint",
     "Open Telemetry",
-    "Project idea generator",
-    "Public Unix box",
-    "\"Ray-traced\" audio",
+    "project idea generator",
+    "public Unix box",
+    "ray-traced audio",
     "RCTV",
-    "Replacement for SQL",
+    "replacement for SQL",
     "Stripe",
-    "Text-based MUD",
-    "The service formerly known as Twitter",
+    "text-based MUD",
+    "the service formerly known as Twitter",
     "Uber",
 ];
 var ys = [
@@ -54,7 +54,7 @@ var ys = [
     "whale sharks",
 ];
 var zs = [
-    "Assembly",
+    "assembly",
     "C",
     "COBOL",
     "Elixir",
@@ -93,6 +93,7 @@ var cs = [
     "via embeddings",
     "with a swiping twist",
     "with a IOT twist",
+    "with camera input",
     "with extra AI",
     "with phong shading",
 ];
@@ -212,6 +213,9 @@ function Seqs(list) {
 function sample(list) {
     return list[Math.floor(Math.random() * list.length)];
 }
+function Sentence(val) {
+    return String(val).charAt(0).toUpperCase() + String(val).slice(1) + "!";
+}
 function main() {
     var elem = document.querySelector("#genText");
     var xpr = Alts([Seqs([Alts(xs), "for", Alts(ys), "in", Alts(zs)]),
@@ -223,7 +227,7 @@ function main() {
     var ways = xpr.ways(toks);
     console.log(ways);
     var k = Math.floor(Math.random() * ways);
-    elem.innerHTML = xpr.kth(toks, k);
+    elem.innerHTML = Sentence(xpr.kth(toks, k));
 }
 main();
 //# sourceMappingURL=index.js.map
