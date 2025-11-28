@@ -1,0 +1,88 @@
+"use strict";
+
+const xs = [
+"5D fractals",
+"A debugger",
+"A vector font renderer",
+"A web scraper",
+"Anthropic",
+"Body idiom catalog",
+"Buffy Search",
+"Cellular automata",
+"Chinese Idiom instruction",
+"Eulerian paths",
+"Facebook",
+"I Ching",
+"Minesweeper",
+"Misrosoft Powerpint",
+"Open Telemetry",
+"Project idea generator",
+"Public Unix box",
+"\"Ray-traced\" audio",
+"RCTV",
+"Replacement for SQL",
+"Stripe",
+"Text-based MUD",
+"The service formerly known as Twitter",
+"Uber",
+];
+
+const ys = [
+"bears",
+"cats",
+"chess actions",
+"dance partners",
+"dogs",
+"the Enterprise",
+"LLMs",
+"Nix users",
+"prose/fiction",
+"vampires",
+"whale sharks",
+];
+
+const zs = [
+"Assembly",
+"C",
+"COBOL",
+"Elixir",
+"Gleam",
+"Haskell",
+"JavaScript",
+"an LSP server",
+"an MCP server",
+"OCaml",
+"PEGs",
+"Python",
+"a recursive CTE",
+"vim script",
+"Zig",
+];
+
+const bs = [
+"a 6502",
+"the blockchain",
+"nix",
+"an Nvidia H100",
+"POSEVAC",
+"the RapidRiter",
+"a Raspberry Pi",
+"the RCade",
+"RCTV",
+];
+
+const cs = [
+"and it's been golfed",
+"at nuclear test sites",
+"but e2e encrypted",
+"but social",
+"but *very* fast",
+"but vibecoded",
+"configured in Nix",
+"solving the halting problem",
+"via embeddings",
+"with a swiping twist",
+"with a IOT twist",
+"with extra AI",
+"with phong shading",
+];
