@@ -12,6 +12,7 @@ const xs = [
 "chinese idiom instruction",
 "Eulerian paths",
 "Facebook",
+"friend fair travel planner",
 "I Ching",
 "Minesweeper",
 "Misrosoft Powerpint",
