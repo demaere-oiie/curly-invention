@@ -10,6 +10,7 @@ const xs = [
 "Buffy search",
 "cellular automata",
 "chinese idiom instruction",
+"CJK segmentation",
 "Eulerian paths",
 "Facebook",
 "friend fair travel planner",
