@@ -30,6 +30,7 @@ let xs = mk_list {|
     RCTV
     replacement for SQL
     silicone controllers
+    snake game
     Stripe
     text-based MUD
     the service formerly known as Twitter
@@ -63,6 +64,7 @@ let zs = mk_list {|
     OCaml
     PEGs
     Python
+    QBasic
     a recursive CTE
     vim script
     Zig
