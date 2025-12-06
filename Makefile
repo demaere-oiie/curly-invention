@@ -1,0 +1,3 @@
+all:
+	eval $$(opam env) && dune build && \
+	cp -f _build/default/bin/index.bc.js public/index.bc.js
