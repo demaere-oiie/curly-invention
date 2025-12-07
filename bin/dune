@@ -1,4 +1,6 @@
 (executable
  (name index)
  (libraries brr reus)
- (modes js))
+ (modes js)
+ (js_of_ocaml (link_flags :standard --no-source-map))
+)

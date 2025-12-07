@@ -19,7 +19,12 @@ let xpr = L.Leq (L.alts [L.seqs [xs;t "for";ys;t "in";zs];
                          L.seqs [zs;t "implemented in";zs;t "on";bs];
                          L.seqs [zs;t "version of";xs;cs];
                          L.seqs [xs;t "meets";xs;cs];
-                         L.seqs [xs;cs;t "—";t "in";zs]])
+                         L.seqs [xs;cs;t "—";t "in";zs];
+                         L.seqs [t "using";zs;t "build";L.alts [
+                             L.seqs [xs];
+                             L.seqs [xs;t "—";cs];
+                             L.seqs [xs;t "on";bs];
+                        ]]])
 
 let () = 
   let sent = fun s -> String.capitalize_ascii s ^ "!" in
