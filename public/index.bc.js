@@ -28938,7 +28938,7 @@ d3=[0,dO],d4=[0,dK];c.sections=[0,[0,103,[0,[0,[0,[0,[0,[0,[0,0,[0,da],0,0,1],[0
        ("\n    2D ray tracer\n    5D fractals\n    a debugger\n    a vector font renderer\n    a web scraper\n    anthropic\n    asteroid mining game\n    binary search\n    body idiom catalog\n    Buffy search\n    cellular automata\n    chinese idiom instruction\n    CJK segmentation\n    CNC painter\n    Eulerian paths\n    Facebook\n    farming game\n    friend fair-travel planner\n    I Ching\n    karaoke server\n    Minesweeper\n    Misrosoft Powerpint\n    Open Telemetry\n    Presentation-Driven Development\n    project idea generator\n    public Unix box\n    ray-traced audio\n    RCTV\n    replacement for SQL\n    silicone controllers\n    snake game\n    Stripe\n    text-based MUD\n    the service formerly known as Twitter\n    Uber\n"),
     ys =
       mk_list
-       ("\n    apr\xc3\xa8s-ski\n    bears\n    cats\n    chess actions\n    dance partners\n    dogs\n    the enterprise\n    karaoke singers\n    LLMs\n    Nix users\n    prose/fiction\n    vampires\n    whale sharks\n"),
+       ("\n    apr\xc3\xa8s-ski\n    bears\n    cats\n    chess actions\n    dance partners\n    dogs\n    the enterprise\n    geometric group theorists\n    karaoke singers\n    LLMs\n    Nix users\n    prose/fiction\n    vampires\n    whale sharks\n"),
     zs =
       mk_list
        ("\n    assembly\n    C\n    COBOL\n    Elixir\n    Gleam\n    Godot\n    Haskell\n    JavaScript\n    an LSP server\n    MarkDownLang\n    an MCP server\n    OCaml\n    PEGs\n    Python\n    QBasic\n    a recursive CTE\n    vim script\n    SKI combinators\n    Zig\n"),

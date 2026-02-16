@@ -48,6 +48,7 @@ let ys = mk_list {|
     dance partners
     dogs
     the enterprise
+    geometric group theorists
     karaoke singers
     LLMs
     Nix users
