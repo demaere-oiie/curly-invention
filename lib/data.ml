@@ -10,11 +10,14 @@ let xs = mk_list {|
     a vector font renderer
     a web scraper
     anthropic
+    asteroid mining game
+    binary search
     body idiom catalog
     Buffy search
     cellular automata
     chinese idiom instruction
     CJK segmentation
+    CNC painter
     Eulerian paths
     Facebook
     farming game
@@ -24,6 +27,7 @@ let xs = mk_list {|
     Minesweeper
     Misrosoft Powerpint
     Open Telemetry
+    Presentation-Driven Development
     project idea generator
     public Unix box
     ray-traced audio
@@ -60,6 +64,7 @@ let zs = mk_list {|
     Haskell
     JavaScript
     an LSP server
+    MarkDownLang
     an MCP server
     OCaml
     PEGs
@@ -67,10 +72,12 @@ let zs = mk_list {|
     QBasic
     a recursive CTE
     vim script
+    SKI combinators
     Zig
 |}
 let bs = mk_list {|
     a 6502
+    transmission over audio
     the blockchain
     nix
     an Nvidia H100
@@ -90,10 +97,12 @@ let cs = mk_list {|
     configured in Nix
     solving the halting problem
     via embeddings
+    with a classical Latin UX
     with a swiping twist
     with a IOT twist
     with camera input
     with extra AI
     with phong shading
+    with a Quichua UX
     with spinner inputs
 |}
