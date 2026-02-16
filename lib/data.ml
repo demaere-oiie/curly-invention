@@ -41,6 +41,7 @@ let xs = mk_list {|
     Uber
 |}
 let ys = mk_list {|
+    après-ski
     bears
     cats
     chess actions
@@ -77,8 +78,8 @@ let zs = mk_list {|
 |}
 let bs = mk_list {|
     a 6502
-    transmission over audio
     the blockchain
+    an LED hat
     nix
     an Nvidia H100
     POSEVAC
@@ -86,6 +87,7 @@ let bs = mk_list {|
     a Raspberry Pi
     the RCade
     RCTV
+    transmission over audio
 |}
 let cs = mk_list {|
     and it's been golfed
