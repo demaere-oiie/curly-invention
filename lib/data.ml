@@ -11,6 +11,7 @@ let xs = mk_list {|
     a web scraper
     anthropic
     asteroid mining game
+    audio programming interface
     binary search
     body idiom catalog
     Buffy search
@@ -36,6 +37,7 @@ let xs = mk_list {|
     silicone controllers
     snake game
     Stripe
+    tarot
     text-based MUD
     the service formerly known as Twitter
     Uber
@@ -49,9 +51,11 @@ let ys = mk_list {|
     dogs
     the enterprise
     geometric group theorists
+    goats
     karaoke singers
     LLMs
     Nix users
+    NSA cryppies
     prose/fiction
     vampires
     whale sharks
@@ -70,6 +74,7 @@ let zs = mk_list {|
     an MCP server
     OCaml
     PEGs
+    pure vibecoding
     Python
     QBasic
     a recursive CTE
