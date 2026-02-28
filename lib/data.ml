@@ -22,6 +22,7 @@ let xs = mk_list {|
     chinese idiom instruction
     CJK segmentation
     CNC painter
+    codebase visualization
     Eulerian paths
     Facebook
     farming game
@@ -38,8 +39,10 @@ let xs = mk_list {|
     project idea generator
     public Unix box
     ray-traced audio
+    reverse-chatbot
     RCTV
     replacement for SQL
+    Semantle
     silicone controllers
     snake game
     Stripe

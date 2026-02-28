@@ -28935,7 +28935,7 @@ d3=[0,dO],d4=[0,dK];c.sections=[0,[0,103,[0,[0,[0,[0,[0,[0,[0,0,[0,da],0,0,1],[0
    var
     xs =
       mk_list
-       ("\n    2D ray tracer\n    5D fractals\n    a debugger\n    a vector font renderer\n    a web scraper\n    algebraic recipes\n    anthropic\n    asteroid mining game\n    astrology charts\n    audio-based programming interface\n    binary search\n    body idiom catalog\n    Buffy search\n    cellular automata\n    chinese idiom instruction\n    CJK segmentation\n    CNC painter\n    Eulerian paths\n    Facebook\n    farming game\n    friend fair-travel planner\n    I Ching\n    1337 code challenges\n    library registry\n    karaoke server\n    Minesweeper\n    minimal comparison sort\n    Misrosoft Powerpint\n    Open Telemetry\n    Presentation-Driven Development\n    project idea generator\n    public Unix box\n    ray-traced audio\n    RCTV\n    replacement for SQL\n    silicone controllers\n    snake game\n    Stripe\n    surveillance collars\n    tarot\n    text-based MUD\n    the service formerly known as Twitter\n    Uber\n"),
+       ("\n    2D ray tracer\n    5D fractals\n    a debugger\n    a vector font renderer\n    a web scraper\n    algebraic recipes\n    anthropic\n    asteroid mining game\n    astrology charts\n    audio-based programming interface\n    binary search\n    body idiom catalog\n    Buffy search\n    cellular automata\n    chinese idiom instruction\n    CJK segmentation\n    CNC painter\n    codebase visualization\n    Eulerian paths\n    Facebook\n    farming game\n    friend fair-travel planner\n    I Ching\n    1337 code challenges\n    library registry\n    karaoke server\n    Minesweeper\n    minimal comparison sort\n    Misrosoft Powerpint\n    Open Telemetry\n    Presentation-Driven Development\n    project idea generator\n    public Unix box\n    ray-traced audio\n    reverse-chatbot\n    RCTV\n    replacement for SQL\n    Semantle\n    silicone controllers\n    snake game\n    Stripe\n    surveillance collars\n    tarot\n    text-based MUD\n    the service formerly known as Twitter\n    Uber\n"),
     ys =
       mk_list
        ("\n    apr\xc3\xa8s-ski\n    bears\n    cats\n    chess actions\n    dance partners\n    dogs\n    the enterprise\n    geometric group theorists\n    goats\n    karaoke singers\n    LLMs\n    Nix users\n    NSA cryppies\n    prose/fiction\n    survivor junkies\n    vampires\n    whale sharks\n"),
@@ -29005,30 +29005,34 @@ d3=[0,dO],d4=[0,dK];c.sections=[0,[0,103,[0,[0,[0,[0,[0,[0,[0,0,[0,da],0,0,1],[0
     h = [0, zs, [0, t("build"), g]],
     i = [0, t("using"), h],
     j = [0, Reus_Lib[5].call(null, i), 0],
-    k = [0, t(cst_in), [0, zs, 0]],
-    l = [0, xs, [0, cs, [0, t(cst$0), k]]],
-    m = [0, Reus_Lib[5].call(null, l), j],
-    n = [0, xs, [0, t("meets"), [0, xs, [0, cs, 0]]]],
-    o = [0, Reus_Lib[5].call(null, n), m],
-    p = [0, zs, [0, t("version of"), [0, xs, [0, cs, 0]]]],
-    q = [0, Reus_Lib[5].call(null, p), o],
-    r = [0, zs, [0, t(cst_on), [0, bs, 0]]],
-    u = [0, zs, [0, t("implemented in"), r]],
-    v = [0, Reus_Lib[5].call(null, u), q],
-    w = [0, ys, [0, t(cst_in), [0, zs, 0]]],
-    x = [0, xs, [0, t("for"), w]],
-    y = [0, Reus_Lib[5].call(null, x), v],
-    xpr = [3, Reus_Lib[4].call(null, y)];
+    k = [0, zs, [0, t("for a typesafe"), [0, xs, 0]]],
+    l = [0, zs, [0, t("code from"), k]],
+    m = [0, t("generating"), l],
+    n = [0, Reus_Lib[5].call(null, m), j],
+    o = [0, t(cst_in), [0, zs, 0]],
+    p = [0, xs, [0, cs, [0, t(cst$0), o]]],
+    q = [0, Reus_Lib[5].call(null, p), n],
+    r = [0, xs, [0, t("meets"), [0, xs, [0, cs, 0]]]],
+    u = [0, Reus_Lib[5].call(null, r), q],
+    v = [0, zs, [0, t("version of"), [0, xs, [0, cs, 0]]]],
+    w = [0, Reus_Lib[5].call(null, v), u],
+    x = [0, zs, [0, t(cst_on), [0, bs, 0]]],
+    y = [0, zs, [0, t("implemented in"), x]],
+    z = [0, Reus_Lib[5].call(null, y), w],
+    A = [0, ys, [0, t(cst_in), [0, zs, 0]]],
+    B = [0, xs, [0, t("for"), A]],
+    C = [0, Reus_Lib[5].call(null, B), z],
+    xpr = [3, Reus_Lib[4].call(null, C)];
    Stdlib_Random[3].call(null, 0);
-   var B = Reus_Lib[7].call(null, 10, xpr);
-   Stdlib[44].call(null, B);
+   var F = Reus_Lib[7].call(null, 10, xpr);
+   Stdlib[44].call(null, F);
    var
     s = Reus_Lib[12].call(null, 10, xpr),
-    z = Stdlib_String[28].call(null, s),
-    A = Stdlib[28].call(null, z, cst$1);
-   gen.innerHTML = Jv[24].call(null, A);
+    D = Stdlib_String[28].call(null, s),
+    E = Stdlib[28].call(null, D, cst$1);
+   gen.innerHTML = Jv[24].call(null, E);
    var Dune_exe_Index = [0];
-   runtime.caml_register_global(24, Dune_exe_Index, "Dune__exe__Index");
+   runtime.caml_register_global(27, Dune_exe_Index, "Dune__exe__Index");
    return;
   }
   (globalThis));
